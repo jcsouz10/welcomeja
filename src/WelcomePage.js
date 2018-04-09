@@ -60,13 +60,13 @@ class Welcome extends React.Component{
         return (
             <div className="Welcome">
             <h1 className="ibm-h1 ibm-plex-sans-semibold">BEM VINDO</h1>
-            <h4 className="ibm-h4 ibm-plex-sans-semibold"> Olá, ficamos felizes por sua chegada, neste documento passaremos para você algumas observações, informações e dicas importantes. </h4>
+            <h4 className="ibm-h4 ibm-plex-sans-semibold"> Ficamos felizes por sua chegada, neste documento passaremos algumas <li>informações, observações e dicas</li> importantes. </h4>
             <h3 className="ibm-h3 ibm-plex-sans-semibold"> Para começarmos, por favor, insira sua matricula abaixo: </h3>
             <input onChange={this.NewValueInput}/>
             <button onClick={this.filterFunc} type="button" className="ibm-btn-pri ibm-btn-gray-50">COMEÇAR</button> 
             <br/> <br/>
             Pagina 2
-            <h1 >Olá <b>{this.GetName()}</b>, estamos felizes por ter você na nossa companhia, abaixo segue algumas informações úteis para você usar no dia a dia:</h1>
+            <h1 >Olá <b>{this.GetName()}</b>, abaixo segue algumas informações úteis para você usar no dia a dia:</h1>
             <h1> Em caso de alguma dúvida com relação aos afazeres do dia a dia, ou conversar sobre algo do trabalho, fique avontade para conversar com o seu gerente.
                 O seu gerente é o <b>{this.GetManager()}</b></h1>
             <button onClick={this.GetWorksTeste}> oi </button>
